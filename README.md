@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @Leafprofessor
+- 👀 I’m interested in programming 
+- 🌱 I’m currently learning BCA
