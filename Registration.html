@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+
+<body>
+
+        <span class="star">* </span>Required fields
+        <table>
+       
+    <form action="mailto:tejaskarambe.tk@gmail.com" method="post" class="form">
+          
+        <tr class="">
+            <td class="green">
+                Get Started With Monster
+            </td>
+        </tr>
+        <tr>
+            <td class="right"><span title="required" class="star">* </span>Email address :  </td>
+            <td class="left"><input type="text" name="Email" width="40px" required=""></td>
+        </tr>
+        <tr>
+            <td class="right"><span class="star">* </span>First Name :  </td>
+            <td class="left"><input type="text" name="Name" width="40px" required=""></td>
+        </tr>
+        <tr>
+            <td class="right"><span class="star">* </span>Last Name :  </td>
+            <td class="left"><input type="text" name="Lname" width="40px" required=""></td>
+        
+        
+        </tr>
+
+        <tr>
+        
+            <td class="right"><span class="star">* </span>Desired username :  </td>
+            <td class="left"><input type="text" name="Username" width="40px" required=""></td>
+        </tr>
+        <tr>
+            <td class="right"><span class="star">* </span>Choose a password :  </td>
+            <td class="left"><input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i></td>
+        </tr>
+        <tr>
+            <td class="right"><span class="star">* </span>Re-enter password : </td>
+            <td class="left"><input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i> </td>
+       
+        </tr>
+        
+        <tr class="">
+            <td class="green" >
+               Personal Details
+            </td>
+        </tr>
+        <tr>
+            <td class="right"><span class="star">* </span>Country:  </td>
+            <td class="left"><select name="country" required="" id="" class="sel">
+                <option value="">- Select -</option> 
+                <option value="Select">INDIA</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="right"></td>
+            <td class="left"><input type="text" width="40px" name="country"></td>
+        </tr>
+        <tr>
+            <td class="right"><span class="star">* </span>Mobile Number:  </td>
+            <td class="left"><input type="tel" width="40px" value="91-" required=""></td>
+        </tr>
+        <tr>
+            <td class="right">Phone Number: </td>
+            <td class="left"><input type="text" name="pn" maxlength="2" size="1" value="91" id="pn"> - <input type="text" maxlength="4" size="2" name="" id="pn" > - <input type="text" name="phone" maxlength="7" size="4"></td>
+        </tr>
+
+        <tr>
+            <td class="right">Preferred job location: </td>
+            <td class="left"><select name="joblocation" id="" class="sel" size="3">
+                <option >- Select -</option>
+                <option >Anywhere</option>
+                <option >Ahamadabad</option>
+                <option >Banglore</option>
+                <option >Pune</option>
+                <option >Nasik</option>
+                <option >Chennai</option>
+                <option >Dehli</option>
+            </select></td>
+       </tr>
+
+       <tr>
+        <td class="right"><span class="star">* </span>Nationality:  </td>
+        <td class="left"><select name="Nationality" id="" class="sel" required="">
+            <option value="">- Select -</option>
+            <option value="" >Indian</option>
+        </select></td>
+    </tr>
+
+
+    <tr>
+        <td class="right"><span class="star">* </span>Gender:  </td>
+        <td class="left"><input type="radio" name="Gender">Male  <input type="radio" name="Gender" required="">Female</td>
+    </tr>
+
+
+
+
+        
+        <tr class="">
+            <td class="green">
+                Profetional Details:
+            </td>
+        </tr>
+
+        <tr>
+            <td class="right"><span class="star">* </span>Total experience:  </td>
+            <td class="left"><select name="experience" id="" class="sel" required="">
+            <option value="select">- Select -</option>
+            <option value="year">1 year</option>
+            <option value="year">2 year</option>
+            <option value="year">3 year</option>
+            <option value="year">4 year</option>
+            <option value="year">5 year</option>
+            <option value="year">More than 5</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="right"><span class="star">* </span>current Preferred Industry: 
+            </td>
+            <td class="left"><select name="Industry" id="" class="sel" size="5" required="">
+                <option value="">- Select -</option>
+                <option value="">Indian</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td class="right">Key Skill : </td>
+            <td class="left"><input type="text" name="Skill" width="40px">  </td>
+        </tr>
+
+        <tr class="">
+            <td class="green">
+                Email Subcription :
+            </td>
+            <td class="left" id="bold">Email you would like to recieve</td>
+        </tr>
+        <tr>
+            <td class="right"></td>
+
+            <td class="left"><input type="checkbox" name="news" id="">Monster Product and Newsletters</td>
+        </tr><tr>
+            <td class="right"></td>
+            <td class="left"> <input type="checkbox" name="news" id="">Offers & Promotions from leading comanies</td>
+        </tr>
+       <tr>
+            <td class="right"></td>
+            <td class="left"> <input type="checkbox" name="news" id="">recieve matching jobs through SMS</td>
+        </tr>
+        
+        <tr><td class="right"></td><td class="left">&nbsp<button class="button" style="vertical-align:middle"><span>Submit </span></button></td></tr>
+    </form>
+</table>
+<table>
+
+</table>
+      
+
+    <script src="project1.js"></script>
+</body>
+</html>
