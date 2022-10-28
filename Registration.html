@@ -21,33 +21,33 @@
             </td>
         </tr>
         <tr>
-            <td class="right"><span title="required" class="star">* </span>Email address :  </td>
-            <td class="left"><input type="text" name="Email" width="40px" required=""></td>
+            <td class="right"><span class="star">* </span><label for="email">Email address : </label>  </td>
+            <td class="left"><input type="text" name="Email" width="40px" required="" id="email"></td>
         </tr>
         <tr>
-            <td class="right"><span class="star">* </span>First Name :  </td>
-            <td class="left"><input type="text" name="Name" width="40px" required=""></td>
+            <td class="right"><span class="star">* </span><label for="name">First Name : </label> </td>
+            <td class="left"><input type="text" name="Name" width="40px" id="name" required=""></td>
         </tr>
         <tr>
-            <td class="right"><span class="star">* </span>Last Name :  </td>
-            <td class="left"><input type="text" name="Lname" width="40px" required=""></td>
+            <td class="right"><span class="star">* </span><label for="sirname">Last Name : </label> </td>
+            <td class="left"><input type="text" name="Lname" id="sirname" width="40px" required=""></td>
         
         
         </tr>
 
         <tr>
         
-            <td class="right"><span class="star">* </span>Desired username :  </td>
-            <td class="left"><input type="text" name="Username" width="40px" required=""></td>
+            <td class="right"><span class="star">* </span><label for="username">Desired username : </label> </td>
+            <td class="left"><input type="text" name="Username" id="username" width="40px" required=""></td>
         </tr>
         <tr>
-            <td class="right"><span class="star">* </span>Choose a password :  </td>
-            <td class="left"><input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+            <td class="right"><span class="star">* </span><label for="password">Choose a password : </label> </td>
+            <td class="left"><input type="password" name="password" id="password" autocomplete="current-password" required="">
                 <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i></td>
         </tr>
         <tr>
-            <td class="right"><span class="star">* </span>Re-enter password : </td>
-            <td class="left"><input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+            <td class="right"><span class="star">* </span><label for="repassword">Re-enter password : </label></td>
+            <td class="left"><input type="password" name="password" autocomplete="current-password" required="" id="repassword">
                 <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i> </td>
        
         </tr>
@@ -58,28 +58,35 @@
             </td>
         </tr>
         <tr>
-            <td class="right"><span class="star">* </span>Country:  </td>
-            <td class="left"><select name="country" required="" id="" class="sel">
+            <td class="right"><span class="star">* </span><label for="country">Country: </label> </td>
+            <td class="left">
+                <select title="Select your country" name="country" required="" id="country" class="sel">
                 <option value="">- Select -</option> 
                 <option value="Select">INDIA</option>
+                <option value="Select">Rassia</option>
+                <option value="Select">America</option>
+                <option value="Select">Austrelia</option>
+                <option value="Select">UK</option>
+                <option value="Select">Japan</option>
+                <option value="Select">China</option>
             </select></td>
         </tr>
         <tr>
             <td class="right"></td>
-            <td class="left"><input type="text" width="40px" name="country"></td>
+            <td class="left"><input title="contry" id="contry" type="text" width="40px" name="country"></td>
         </tr>
         <tr>
-            <td class="right"><span class="star">* </span>Mobile Number:  </td>
-            <td class="left"><input type="tel" width="40px" value="91-" required=""></td>
+            <td class="right"><span class="star">* </span><label for="mono">Mobile Number: </label> </td>
+            <td class="left"><input type="tel" width="40px" value="91-" id="mono" required=""></td>
         </tr>
         <tr>
-            <td class="right">Phone Number: </td>
-            <td class="left"><input type="text" name="pn" maxlength="2" size="1" value="91" id="pn"> - <input type="text" maxlength="4" size="2" name="" id="pn" > - <input type="text" name="phone" maxlength="7" size="4"></td>
+            <td class="right"><label for="pn1">Phone Number:</label> </td>
+            <td class="left"><input type="text" name="" maxlength="2" size="1" value="91" id="pn1"> - <input type="text" maxlength="4" size="1" name="" id="pn2" > - <input type="text" name="phone" maxlength="6" size="3" id="pn3"></td>
         </tr>
 
         <tr>
-            <td class="right">Preferred job location: </td>
-            <td class="left"><select name="joblocation" id="" class="sel" size="3">
+            <td class="right"><label for="jobloc">Preferred job location: </label></td>
+            <td class="left"><select title="Select Job location" name="joblocation" id="jobloc" class="sel" size="3">
                 <option >- Select -</option>
                 <option >Anywhere</option>
                 <option >Ahamadabad</option>
@@ -92,17 +99,22 @@
        </tr>
 
        <tr>
-        <td class="right"><span class="star">* </span>Nationality:  </td>
-        <td class="left"><select name="Nationality" id="" class="sel" required="">
+        <td class="right"><span class="star">* </span><label for="nation">Nationality: </label> </td>
+        <td class="left"><select title="Select Nationality" name="Nationality" id="nation" class="sel" required="">
             <option value="">- Select -</option>
             <option value="" >Indian</option>
+            <option value="" >American</option>
+            <option value="" >Austrelian</option>
+            <option value="" >Russian</option>
+            <option value="" >Chinese</option>
+            <option value="" >Japanese</option>
         </select></td>
     </tr>
 
 
     <tr>
-        <td class="right"><span class="star">* </span>Gender:  </td>
-        <td class="left"><input type="radio" name="Gender">Male  <input type="radio" name="Gender" required="">Female</td>
+        <td class="right"><span class="star">* </span><label>Gender: </label> </td>
+        <td class="left"><input type="radio" name="Gender" id="genderm"><label for="genderm">Male  </label><input type="radio" name="Gender" required="" id="genderf"><label for="genderf">Female</label></td>
     </tr>
 
 
@@ -116,8 +128,8 @@
         </tr>
 
         <tr>
-            <td class="right"><span class="star">* </span>Total experience:  </td>
-            <td class="left"><select name="experience" id="" class="sel" required="">
+            <td class="right"><span class="star">* </span><label for="experience">Total experience: </label> </td>
+            <td class="left"><select title="experience" name="experience" id="experience" class="sel" required="">
             <option value="select">- Select -</option>
             <option value="year">1 year</option>
             <option value="year">2 year</option>
@@ -128,17 +140,22 @@
             </select></td>
         </tr>
         <tr>
-            <td class="right"><span class="star">* </span>current Preferred Industry: 
+            <td class="right"><span class="star">* </span><label for="industry">current Preferred Industry:</label> 
             </td>
-            <td class="left"><select name="Industry" id="" class="sel" size="5" required="">
+            <td class="left"><select title="Industry" name="Industry" id="industry" class="sel" size="5" required="">
                 <option value="">- Select -</option>
-                <option value="">Indian</option>
+                <option value="">IT Industry</option>
+                <option value="">Electronics Industry</option>
+                <option value="">Petrolium Industry</option>
+                <option value="">Automobile Industry</option>
+                <option value="">Agriculture Industry</option>
+                <option value="">Medical Industry</option>
             </select></td>
         </tr>
 
         <tr>
-            <td class="right">Key Skill : </td>
-            <td class="left"><input type="text" name="Skill" width="40px">  </td>
+            <td class="right"><label for="skill"><label for="skill">Key Skill : </label></label></td>
+            <td class="left"><input id="skill" type="text" name="Skill" width="40px">  </td>
         </tr>
 
         <tr class="">
@@ -150,17 +167,17 @@
         <tr>
             <td class="right"></td>
 
-            <td class="left"><input type="checkbox" name="news" id="">Monster Product and Newsletters</td>
+            <td class="left"><input  type="checkbox" name="news" id="1"><label for="1">Monster Product and Newsletters</label></td>
         </tr><tr>
             <td class="right"></td>
-            <td class="left"> <input type="checkbox" name="news" id="">Offers & Promotions from leading comanies</td>
+            <td class="left"> <input type="checkbox" name="news" id="2"><label for="2">Offers & Promotions from leading comanies</label></td>
         </tr>
        <tr>
             <td class="right"></td>
-            <td class="left"> <input type="checkbox" name="news" id="">recieve matching jobs through SMS</td>
+            <td class="left"> <input type="checkbox" name="news" id="3" ><label for="3">recieve matching jobs through SMS</label></td>
         </tr>
         
-        <tr><td class="right"></td><td class="left">&nbsp<button class="button" style="vertical-align:middle"><span>Submit </span></button></td></tr>
+        <tr><td class="right"></td><td class="left">&nbsp<button type="submit" class="button3" ><span>Submit </span></button></td></tr>
     </form>
 </table>
 <table>
