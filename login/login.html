@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  
+    <div class="m">
+    <h1></h1>
+    <table>
+    <form class="Main" action="" method="get">
+         <div class="">
+           <tr> <div class="head">Login</div></tr>
+               
+        <div class="success" ></div>
+
+                <tr>
+                    <td class="b"></td>
+                    <td class="e"><label for="email">Email Address</label></td>
+                    <td class="f"><input type="email" name="email" id="email"></td>
+                </tr>
+                
+                <tr>
+                    <td class="b"></td>
+                    <td class="e"><label for="password">password</label></td>
+                    <td class="f"><input type="password" name="" id="password"></td>
+                </tr>
+               
+      
+    </table><div class="blue">
+    <div class="btn">
+        <button class="bt" onclick="myFunction()">Login</button>
+        <span>or</span>
+       <a class="bt" href="/project1.html">Create an account</a>
+    </div>
+    <div class="ll">
+    <span>if you forgot the password. Please click on </span><a href="">Forgot Password</a>
+</div>
+</div>
+</div>
+    </form>
+</div>
+<script>
+    function myFunction() {
+        document.getElementsByClassName("success").innerHTML ="Logged in Successful";
+    }
+</script>
+    
+</body>
+</html>
+
+
