@@ -16,11 +16,16 @@ body{
     padding: 5px;
     text-align: right;
 }
+.hr{
+    border-left: 4px solid black;
+    height: 608px;
+    position: relative;
+    left: 220px;
+}
 .right{
    
     border-right: 2px solid rgb(212, 80, 80);
-    
-    text-align: inherit;
+   
     padding: 20px;
     
    
@@ -29,13 +34,12 @@ body{
    
 } */
 .left{
-   position: relative;
+   
     height: 2em;
     text-align: left;
-    width: 70%;
+    width: 80%;
 }
 .star{
-    
     color: red;
     
 }
@@ -68,5 +72,9 @@ table{
     background-color: #ff2f00;
 }
 .sel{
-    width: 15em;
+    width: 13em;
+}
+
+.button3{
+   vertical-align:middle;
 }
