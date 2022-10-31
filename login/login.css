@@ -4,9 +4,9 @@ body{
    margin: auto;
 
 }
-.success {
-  color: rgb(67, 252, 26);
-  background-color: rgb(218, 218, 218);
+#demo {
+  color: rgb(0, 92, 44);
+  background-color: rgb(255, 255, 255);
   text-align: center;
   padding: 5px;
   margin: auto;
@@ -15,8 +15,6 @@ table{
   margin: auto;
 }
 .m{
-  
- 
   margin: auto;
   width: 30em;
   background-color: white;
@@ -58,6 +56,9 @@ nav{
 input{
     width: 75%;
 }
+input#submit{
+          width: 60px;
+}
 .btn{
 background-color: rgb(230, 243, 238);
 text-align: center;
@@ -80,9 +81,6 @@ a{
   text-align: center;
   padding: 5px;
   margin: auto;
-}
-.blue{
-
 }
 .ll{
  margin: 2px;
