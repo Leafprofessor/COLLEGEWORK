@@ -8,49 +8,79 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  
-    <div class="m">
-    <h1></h1>
-    <table>
-    <form class="Main" action="" method="get">
-         <div class="">
-           <tr> <div class="head">Login</div></tr>
-               
-        <div class="success" ></div>
 
+    <div class="m">
+        <h1></h1>
+        <table>
+            <form class="Main" method="get" name="form1">
+
+                <tr>
+                    <div class="head">Login</div>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p id="demo">
+                    </td>
+                </tr>
                 <tr>
                     <td class="b"></td>
                     <td class="e"><label for="email">Email Address</label></td>
-                    <td class="f"><input type="email" name="email" id="email"></td>
+                    <td class="f"><input type="email" name="text1" id="email" important!></td>
                 </tr>
-                
+
                 <tr>
                     <td class="b"></td>
                     <td class="e"><label for="password">password</label></td>
-                    <td class="f"><input type="password" name="" id="password"></td>
+                    <td class="f"><input type="password" name="" id="password" minlength="8"> </td>
                 </tr>
-               
-      
-    </table><div class="blue">
-    <div class="btn">
-        <button class="bt" onclick="myFunction()">Login</button>
-        <span>or</span>
-       <a class="bt" href="/project1.html">Create an account</a>
+        </table>
+        <div class="blue">
+            <div class="btn">
+
+                <button id="myBtn" onclick="ValidateEmail(document.form1.text1)">Try it</button>
+
+                <span>or</span>
+                <a class="bt" href="/project1.html">Create an account</a>
+            </div>
+            <div class="ll">
+                <span>if you forgot the password. Please click on </span><a href="">Forgot Password</a>
+            </div>
+        </div>
     </div>
-    <div class="ll">
-    <span>if you forgot the password. Please click on </span><a href="">Forgot Password</a>
-</div>
-</div>
-</div>
     </form>
-</div>
-<script>
-    function myFunction() {
-        document.getElementsByClassName("success").innerHTML ="Logged in Successful";
+    </div>
+    <script type="text/JavaScript">
+       const element = document.getElementById("myBtn");
+        element.addEventListener("click", myFunction);
+
+        //validating Email
+function ValidateEmail(input) {
+
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (input.value.match(validRegex)){
+    document.getElementById("demo").innerHTML = "Logged in Successful";
+    //validating password
+    if(document.getElementById("password").value.length<=7){
+    document.getElementById("demo").innerHTML = "Password must be minimum 8 character";
     }
-</script>
-    
+    //to stop reload
+    event.preventDefault();
+    return true;
+  } else {
+    document.getElementById("demo").innerHTML = "Invalid Email";
+    event.preventDefault();
+    document.form1.text1.focus();
+    return false;
+  }
+}           //Check empty input
+
+        function myFunction() {
+           if(document.getElementById("email").value.length<1){
+                document.getElementById("demo").innerHTML = "Enter Email first";
+                event.preventDefault();
+            }
+        }
+    </script>
 </body>
+
 </html>
-
-
